@@ -1,4 +1,4 @@
-const peticion = () => {
+const peticion = async () => {
     setTimeout(() => {
      const datos = {
         "id": 3,
@@ -12,7 +12,7 @@ const peticion = () => {
     }, 1000);
 };
 
-peticion();
+peticion().then(console.log);
 
 
 
